@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+
+<body>
+    <h1>Random</h1>
+    <div class="form">
+        <div class="bagian">
+            <label>
+                <span class="small">Jumlah orang</span> <br>
+                <input type="number" name="jumlah_orang">
+            </label>
+        </div>
+        <div class="bagian">
+                <span class="small">Bagi kelompok berdasarkan</span> <br>
+            <label class="base">
+                <input type="radio" name="base" value="kelompok"> Jumlah Kelompok
+            </label>
+            <label class="base">
+                <input type="radio" name="base" value="orang_per_kelompok"> Jumlah Orang Per Kelompok
+            </label>
+        </div>
+        <div id="kelompok" class="bagian" style="display: none">
+            <label>
+                    <span class="small">Jumlah kelompok</span> <br>
+                <input type="number" name="jumlah_kelompok">
+            </label>
+        </div>
+        <div id="orang_per_kelompok" class="bagian" style="display: none">
+            <label>
+                <span class="small">Jumlah orang per kelompok</span><br>
+                <input type="number" name="jumlah_orang_per_kelompok">
+            </label>
+            <div id="distribusi" style="display: none">
+                <label>
+                    <input name="distribusi" type="radio" value="1"> Distribusikan kelompok yang kurang dari <span class="n"></span> anggota
+                </label>
+                <label>
+                    <input name="distribusi" type="radio" value="0"> Biarkan seadanya</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="hasil"></div>
+    <div class="credit">Made By <a href="https://fb.com/sarizu99" target="blank">Samsul Arif</a></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
