@@ -3,9 +3,6 @@ var bagi = {
         var orangs = [],
             kelompoks = [];
 
-        console.log(distribusi);
-
-
         for (let i = 0; i < jumlah_orang; i++) {
             orangs.push(i + 1);
         }
@@ -198,8 +195,5 @@ for (let i = 0; i < _distribusi_radio.length; i++) {
                 _hasil
             );
         }
-
-        console.log(el);
-
     })
 }
